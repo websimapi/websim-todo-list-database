@@ -11,7 +11,8 @@
 <body>
   <div id="app">
     <h1>Todo List</h1>
-    <form id="todoForm">
+    <!-- Added action attribute to prevent any unintended page reload -->
+    <form id="todoForm" action="javascript:void(0)">
       <input type="text" id="todoInput" placeholder="Enter new todo" required>
       <button type="submit">Add Todo</button>
     </form>

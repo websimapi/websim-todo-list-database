@@ -66,7 +66,7 @@ todoCollection.subscribe(function (todos) {
   renderTodos(todos.slice().reverse());
 });
 
-// Handle new todo submission
+// Handle new todo submission without reloading the page
 todoForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   const text = todoInput.value.trim();
